@@ -23,7 +23,7 @@ No commits yet
 
 PS C:\Python> git log
 fatal: your current branch 'master' does not have any commits yet
-PS C:\Python> git log --online
+PS C:\Python> git log --oneline
 fatal: your current branch 'master' does not have any commits yet
 
 --Aca pasamos del staging a repository 
@@ -57,7 +57,11 @@ PS C:\pruebagit> git branch
 * master
 PS C:\pruebagit> git merge desarrollo
 
+-- para coenctarnos al github  cramos el repo y nos dice las lineas a ajecutar en este caso  fue
+
+
 --  para ver si  estamos conectados a github
 git remote -v
 
-
+-- para traer de github , la ruta la sacomos de github 
+git clone https://github.com/kbalaguer/pruebagit.git
