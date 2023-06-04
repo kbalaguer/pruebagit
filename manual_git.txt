@@ -66,4 +66,8 @@ git remote -v
 -- para traer de github , la ruta la sacomos de github 
 git clone https://github.com/kbalaguer/pruebagit.git
 
+-- en el caso  de que queremos subir a otra rama , este comenao  cra  la rama en github y sube 
+git push --set-upstream origin mi computadora 
+
+
 
