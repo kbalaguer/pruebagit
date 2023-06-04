@@ -1,0 +1,63 @@
+PS C:\Python> git config --global user.email "tucorreo@example.com"
+-- start . abre el explorador de archivo
+PS C:\pruebagit> start .
+-- genera una carpeta oculta para repositorio 
+PS C:\pruebagit> git init
+Initialized empty Git repository in C:/pruebagit/.git/
+
+--Dentro de la carpeta del proyecto generamos un archivo llamado .gitignore y ahi  dentro  colocamos las cosas que queremos excluir 
+
+--para pasar de working area a staging area(esta ultima es la seleccion para el seguimiento para posterior pasaje prod)
+PS C:\Python> git add .\anotaciones_mias\PrimerEnytega.py        
+PS C:\Python> git  status
+On branch master
+
+-- en el caso  que quiera subir todo es :
+PS C:\Python> git add .
+PS C:\Python> git  status
+On branch master
+
+No commits yet
+
+--para ver el log de los commits que se relaizaron
+
+PS C:\Python> git log
+fatal: your current branch 'master' does not have any commits yet
+PS C:\Python> git log --online
+fatal: your current branch 'master' does not have any commits yet
+
+--Aca pasamos del staging a repository 
+git commit -m 'aca hacemos el primer commit' 
+
+--Indica en que rama estoy
+PS C:\pruebagit> git branch
+* master
+
+--Crea una rama nueva llamda desarrollo
+PS C:\pruebagit> git branch desarrollo
+PS C:\pruebagit> git branch
+  desarrollo
+* master
+
+--  de esta manera crea y mueve a la nueva rama creada tambien se puede usar  git switch prueba
+PS C:\pruebagit> git checkout -b testing
+Switched to a new branch 'testing'
+
+--  me muevo entre ramas ya creadas 
+PS C:\pruebagit> git checkout desarrollo
+Switched to branch 'desarrollo
+
+-- aca me muevo  a un commit
+PS C:\pruebagit> git checkout b179bf9  
+
+-- hacer merge de desarrollo a master 
+PS C:\pruebagit> git checkout master    
+PS C:\pruebagit> git branch
+  desarrollo
+* master
+PS C:\pruebagit> git merge desarrollo
+
+--  para ver si  estamos conectados a github
+git remote -v
+
+
